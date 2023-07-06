@@ -158,7 +158,7 @@ MainWindow::MainWindow(QWidget *parent)
                             score->bgm->play();
                             delete stackedWidget->widget(2);
                          });*/
-                        level->total_score = widget->_people * widget->_time;
+                        level->total_score += widget->_people * widget->_time;
                         delete stackedWidget->widget(1);
                         delete stackedWidget->widget(0);
                         delete stackedWidget;
